@@ -6,16 +6,15 @@
         body {
             font-family: Arial, sans-serif;
             background: white;
-            padding: 20px;
             line-height: 1.4;
-            font-size: 12px;
+            font-size: 16px;
         }
 
         .form-container {
             background: white;
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 30px;
+            padding: 40px;
         }
 
         .form-header {
@@ -24,42 +23,44 @@
         }
 
         .form-title {
-            font-size: 16px;
-            font-weight: bold;
+            font-size: 14px;
+            font-weight: 500;
             margin-bottom: 5px;
         }
 
         .form-subtitle {
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: underline;
         }
 
         .form-note {
-            font-size: 11px;
+            font-size: 14px;
             margin-bottom: 20px;
         }
 
         .field-row {
             display: flex;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
             align-items: flex-start;
             margin-top: 4px;
             
         }
 
         .field-label {
-            background-color: #d1d5db;
+            background-color: #d3d3d3;
                     padding: 4px 8px;
                     font-weight: bold;
-                    font-size: 14px;
+                    font-size: 16px;
                     display: inline-block;
-                    white-space: pre-line;
+                    margin-top: 2px;
+                    line-height: 20px;
                     user-select: none;
-                    margin-right: 8px;
-                    vertical-align: top;
+                    /* vertical-align: top; */
                     min-width: 120px;
         }
+
+
 
         .letter-container {
             display: flex;
@@ -69,15 +70,16 @@
             align-items: center;
             padding: 2px 0;
             position: relative;
+            margin-bottom: 12px;
         }
 
         .letter-box{
-      width: 24px;
-      height: 24px;
-      border: 1px solid #d1d5db;
+      width: 28px;
+      height: 28px;
+      border: 1px solid #d3d3d3;
       text-align: center;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 16px;
       text-transform: uppercase;
       padding: 0;
       box-sizing: border-box;
@@ -95,14 +97,14 @@
         .bank-title {
             font-weight: bold;
             font-style: italic;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
             font-size: 16px;
         }
 
         .date-field {
             display: flex;
             align-items: center;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
         }
 
         .date-label {
@@ -127,11 +129,11 @@
         }
 
         .date-input {
-            width: 25px;
-            height: 20px;
+            width: 30px;
+            height: 26px;
             border: 1px solid #000;
             text-align: center;
-            font-size: 12px;
+            font-size: 14px;
             font-family: Arial, sans-serif;
             outline: none;
             background: white;
@@ -150,8 +152,8 @@
         .checkbox-row {
             display: flex;
             align-items: center;
-            margin-bottom: 15px;
-            gap: 15px;
+            margin-bottom: 16px;
+            gap: 16px;
         }
 
         .checkbox-label {
@@ -167,16 +169,16 @@
         }
 
         .checkbox {
-            width: 15px;
-            height: 15px;
+            width: 16px;
+            height: 16px;
             border: 1px solid #000;
             display: inline-block;
             cursor: pointer;
         }
 
         .checkbox input[type="checkbox"] {
-            width: 15px;
-            height: 15px;
+            width: 16px;
+            height: 16px;
             margin: 0;
             cursor: pointer;
         }
@@ -188,12 +190,12 @@
         .amount-section {
             margin: 20px 0;
             border: 1px solid #333333;
-            padding: 15px;
+            padding: 16px;
         }
 
         .amount-title {
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
             font-size: 14px;
         }
 
@@ -210,6 +212,60 @@
             font-size: 12px;
         }
 
+    .bid-section {
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  .bid-title {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+
+  .bid-row {
+    display: flex;
+  }
+
+  .bid-label {
+    background-color: #d3d3d3;
+    font-weight: bold;
+    padding: 0;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .bid-label div {
+    padding: 8px;
+  }
+
+  .bid-label div:last-child {
+    border-bottom: none;
+  }
+
+  .bid-input {
+    flex: 1;
+    border-left: 1px solid #999;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bid-input div {
+    flex: 1;
+  }
+
+  .bid-input div:last-child {
+    border-bottom: none;
+  }
+
+  .full-row {
+    border-top: 1px solid #999;
+    padding: 8px;
+    height: 40px;
+  }
+
         .declaration-section {
             margin-top: 30px;
             border-top: 1px dashed #000;
@@ -217,13 +273,13 @@
         }
 
         .declaration-text {
-            font-size: 11px;
+            font-size: 18px;
             text-align: justify;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
             line-height: 1.4;
         }
 
-        .signature-section {
+        /* .signature-section {
             margin-top: 30px;
             text-align: right;
         }
@@ -239,7 +295,7 @@
         .signature-label {
             font-weight: bold;
             font-size: 12px;
-            width: 100px;
+            position: relative;
         }
 
         .signature-box {
@@ -253,10 +309,53 @@
             height: 40px;
             border: none;
             border-bottom: 1px solid #000;
-            font-size: 12px;
+            font-size: 16px;
             outline: none;
             padding: 5px;
+        } */
+
+        /* .signature-line {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
         }
+        .line-img {
+            width: 300px;
+            height: auto;
+            margin-bottom: 6px;
+        }
+        .label {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+        } */
+
+        .signature-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signature-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-img {
+  width: 300px;
+  height: 3px;
+  background-color: black;
+}
+
+.signature-label {
+  margin-top: 8px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 
         .long-underline {
             border-bottom: 1px solid #000;
